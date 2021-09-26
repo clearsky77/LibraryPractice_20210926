@@ -1,6 +1,7 @@
 package com.clearsky77.librarypractice_20210926
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -12,6 +13,12 @@ class MainActivity : AppCompatActivity() {
 
         profileImg.setOnClickListener {
             val myIntent = Intent(this, ViewPhotoActivity::class.java)
+            startActivity(myIntent)
+        }
+
+        callBtn.setOnClickListener {
+            val myUri = Uri.parse("tel:010-1919-2121")
+            val myIntent = Intent(Intent.ACTION_CALL, myUri)
             startActivity(myIntent)
         }
     }
