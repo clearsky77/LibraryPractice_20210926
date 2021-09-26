@@ -8,5 +8,25 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#8C8C8C"
+            android:src="@drawable/pic_arunyang"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arunyang"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
